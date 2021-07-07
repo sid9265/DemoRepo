@@ -1,3 +1,13 @@
-<h1>Two way Data Binding</h1>
-<input type="text" [(ngModel)]="name">
-<h2>{{name}}</h2>
+<div><input type="text" [(ngModel)]="names" /></div>
+<br>
+<div><input type="text" [(ngModel)]="age" /></div>
+
+<p>UserName:{{uName}}</p>
+<p> Age:{{uAge}}</p>
+
+
+<button (click)="assignVal()">Click</button>
+<span style="margin: 10px;">
+<button (click)="clear()">Clear</button>
+</span>
+

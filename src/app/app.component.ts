@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-project';
-  name="";
+  
+  names: string | undefined;
+  age: number | undefined;
+  
+  
+  uName: string | undefined;
+  uAge: number | undefined; 
+
+  assignVal() {
+    this.uName = this.names;
+    this.uAge=this.age;
 }
+
+ clear() {
+  this.names = undefined;
+  this.age = undefined;
+
+  this.uName = this.names;
+  this.uAge=this.age;
+}
+    
+}
+
+ 
